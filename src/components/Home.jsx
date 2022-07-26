@@ -1,9 +1,10 @@
 import React,{useEffect, useState} from 'react'
 import axios from 'axios'
+import Form from './Form';
 
 const Home = () => {
     const [state,setState]=useState("");
-
+/*
     useEffect(()=>{
 
         axios.get("http://localhost:9090/data").then(data=>{
@@ -15,11 +16,13 @@ const Home = () => {
         })
         
     },[])
+    */
 
 
   return (
     <div>
-        <h1>Home Component {state} </h1>
+       
+       <Form/>
     </div>
   )
 }
